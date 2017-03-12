@@ -58,15 +58,11 @@ DEFALIAS(     "646",                    /* Solaris */
 /* General multi-byte encodings */
 
 DEFENCODING(( "UTF-8",                  /* IANA, RFC 2279 */
-            /*"UTF8",                      JDK 1.1 */
+              "UTF8",                   /* JDK 1.1 */
             /*"CP65001",                   Windows */
             ),
             utf8,
             { utf8_mbtowc, NULL },        { utf8_wctomb, NULL })
-#ifdef USE_HPUX_ALIASES
-DEFALIAS(     "UTF8",                   /* HP-UX */
-            utf8)
-#endif
 
 DEFENCODING(( "UCS-2",                  /* glibc */
               "ISO-10646-UCS-2",        /* IANA */
