@@ -186,7 +186,7 @@ DEFENCODING(( "ISO-8859-1",             /* IANA */
               "L1",                     /* IANA */
               "csISOLatin1",            /* IANA */
               "ISO8859-1",              /* X11R6.4, glibc, FreeBSD, AIX, IRIX, OSF/1, Solaris */
-            /*"ISO8859_1",                 JDK 1.1 */
+              "ISO8859_1",              /* JDK 1.1 */
             /*"CP28591",                   Windows */
             ),
             iso8859_1,
@@ -204,7 +204,7 @@ DEFENCODING(( "ISO-8859-2",             /* IANA */
               "L2",                     /* IANA */
               "csISOLatin2",            /* IANA */
               "ISO8859-2",              /* X11R6.4, glibc, FreeBSD, AIX, IRIX, OSF/1, Solaris */
-            /*"ISO8859_2",                 JDK 1.1 */
+              "ISO8859_2",              /* JDK 1.1 */
             /*"CP28592",                   Windows */
             ),
             iso8859_2,
@@ -222,7 +222,7 @@ DEFENCODING(( "ISO-8859-3",             /* IANA */
               "L3",                     /* IANA */
               "csISOLatin3",            /* IANA */
               "ISO8859-3",              /* X11R6.4, glibc, FreeBSD, Solaris */
-            /*"ISO8859_3",                 JDK 1.1 */
+              "ISO8859_3",              /* JDK 1.1 */
             /*"CP28593",                   Windows */
             ),
             iso8859_3,
@@ -236,7 +236,7 @@ DEFENCODING(( "ISO-8859-4",             /* IANA */
               "L4",                     /* IANA */
               "csISOLatin4",            /* IANA */
               "ISO8859-4",              /* X11R6.4, glibc, FreeBSD, OSF/1, Solaris */
-            /*"ISO8859_4",                 JDK 1.1 */
+              "ISO8859_4",              /* JDK 1.1 */
             /*"CP28594",                   Windows */
             ),
             iso8859_4,
@@ -249,7 +249,7 @@ DEFENCODING(( "ISO-8859-5",             /* IANA */
               "CYRILLIC",               /* IANA */
               "csISOLatinCyrillic",     /* IANA */
               "ISO8859-5",              /* X11R6.4, glibc, FreeBSD, AIX, IRIX, OSF/1, Solaris */
-            /*"ISO8859_5",                 JDK 1.1 */
+              "ISO8859_5",              /* JDK 1.1 */
             /*"CP28595",                   Windows */
             ),
             iso8859_5,
@@ -268,7 +268,7 @@ DEFENCODING(( "ISO-8859-6",             /* IANA */
               "ARABIC",                 /* IANA */
               "csISOLatinArabic",       /* IANA */
               "ISO8859-6",              /* X11R6.4, glibc, FreeBSD, AIX, Solaris */
-            /*"ISO8859_6",                 JDK 1.1 */
+              "ISO8859_6",              /* JDK 1.1 */
             /*"CP28596",                   Windows */
             ),
             iso8859_6,
@@ -289,7 +289,7 @@ DEFENCODING(( "ISO-8859-7",             /* IANA, RFC 1947 */
               "GREEK",                  /* IANA */
               "csISOLatinGreek",        /* IANA */
               "ISO8859-7",              /* X11R6.4, glibc, FreeBSD, AIX, IRIX, OSF/1, Solaris */
-            /*"ISO8859_7",                 JDK 1.1 */
+              "ISO8859_7",              /* JDK 1.1 */
             /*"CP28597",                   Windows */
             ),
             iso8859_7,
@@ -306,7 +306,7 @@ DEFENCODING(( "ISO-8859-8",             /* IANA */
               "HEBREW",                 /* IANA */
               "csISOLatinHebrew",       /* IANA */
               "ISO8859-8",              /* X11R6.4, glibc, FreeBSD, AIX, OSF/1, Solaris */
-            /*"ISO8859_8",                 JDK 1.1 */
+              "ISO8859_8",              /* JDK 1.1 */
             /*"CP28598",                   Windows */
             /*"CP38598",                   Windows */
             ),
@@ -325,7 +325,7 @@ DEFENCODING(( "ISO-8859-9",             /* IANA */
               "L5",                     /* IANA */
               "csISOLatin5",            /* IANA */
               "ISO8859-9",              /* X11R6.4, glibc, FreeBSD, AIX, IRIX, OSF/1, Solaris */
-            /*"ISO8859_9",                 JDK 1.1 */
+              "ISO8859_9",              /* JDK 1.1 */
             /*"CP28599",                   Windows */
             ),
             iso8859_9,
@@ -409,12 +409,14 @@ DEFENCODING(( "ISO-8859-16",            /* IANA */
 
 DEFENCODING(( "KOI8-R",                 /* IANA, RFC 1489, X11R6.4, JDK 1.1 */
               "csKOI8R",                /* IANA */
+              "KOI8R",
             /*"CP20866",                   Windows */
             ),
             koi8_r,
             { koi8_r_mbtowc, NULL },      { koi8_r_wctomb, NULL })
 
 DEFENCODING(( "KOI8-U",                 /* IANA, RFC 2319 */
+              "KOI8U",
             ),
             koi8_u,
             { koi8_u_mbtowc, NULL },      { koi8_u_wctomb, NULL })
@@ -429,6 +431,7 @@ DEFENCODING(( "KOI8-RU",
 
 DEFENCODING(( "CP1250",                 /* JDK 1.1 */
               "WINDOWS-1250",           /* IANA */
+              "WIN1250",
               "MS-EE",
             ),
             cp1250,
@@ -436,6 +439,7 @@ DEFENCODING(( "CP1250",                 /* JDK 1.1 */
 
 DEFENCODING(( "CP1251",                 /* JDK 1.1 */
               "WINDOWS-1251",           /* IANA */
+              "WIN1251",
               "MS-CYRL",
             ),
             cp1251,
@@ -447,6 +451,7 @@ DEFALIAS(     "ANSI-1251",              /* Solaris */
 
 DEFENCODING(( "CP1252",                 /* JDK 1.1 */
               "WINDOWS-1252",           /* IANA */
+              "WIN1252",
               "MS-ANSI",
             ),
             cp1252,
@@ -458,6 +463,7 @@ DEFALIAS(     "IBM-1252",               /* AIX */
 
 DEFENCODING(( "CP1253",                 /* JDK 1.1 */
               "WINDOWS-1253",           /* IANA */
+              "WIN1253",
               "MS-GREEK",
             ),
             cp1253,
@@ -465,6 +471,7 @@ DEFENCODING(( "CP1253",                 /* JDK 1.1 */
 
 DEFENCODING(( "CP1254",                 /* JDK 1.1 */
               "WINDOWS-1254",           /* IANA */
+              "WIN1254",
               "MS-TURK",
             ),
             cp1254,
@@ -472,6 +479,7 @@ DEFENCODING(( "CP1254",                 /* JDK 1.1 */
 
 DEFENCODING(( "CP1255",                 /* JDK 1.1 */
               "WINDOWS-1255",           /* IANA */
+              "WIN1255",
               "MS-HEBR",
             ),
             cp1255,
@@ -479,6 +487,7 @@ DEFENCODING(( "CP1255",                 /* JDK 1.1 */
 
 DEFENCODING(( "CP1256",                 /* JDK 1.1 */
               "WINDOWS-1256",           /* IANA */
+              "WIN1256",
               "MS-ARAB",
             ),
             cp1256,
@@ -486,6 +495,7 @@ DEFENCODING(( "CP1256",                 /* JDK 1.1 */
 
 DEFENCODING(( "CP1257",                 /* JDK 1.1 */
               "WINDOWS-1257",           /* IANA */
+              "WIN1257",
               "WINBALTRIM",
             ),
             cp1257,
@@ -493,6 +503,7 @@ DEFENCODING(( "CP1257",                 /* JDK 1.1 */
 
 DEFENCODING(( "CP1258",                 /* JDK 1.1 */
               "WINDOWS-1258",           /* IANA */
+              "WIN1258",
             ),
             cp1258,
             { cp1258_mbtowc, cp1258_flushwc }, { cp1258_wctomb, NULL })
@@ -520,6 +531,7 @@ DEFENCODING(( "CP862",                  /* IANA, JDK 1.1 */
             { cp862_mbtowc, NULL },       { cp862_wctomb, NULL })
 
 DEFENCODING(( "CP866",                  /* IANA, JDK 1.1 */
+              "WIN866",
               "IBM866",                 /* IANA */
               "866",                    /* IANA */
               "csIBM866",               /* IANA */
@@ -701,6 +713,7 @@ DEFALIAS(     "TIS620.2533",            /* Solaris */
 
 DEFENCODING(( "CP874",                  /* JDK 1.1 */
               "WINDOWS-874",
+              "WIN874",
             ),
             cp874,
             { cp874_mbtowc, NULL },       { cp874_wctomb, NULL })
@@ -810,7 +823,7 @@ DEFENCODING(( "EUC-JP",                 /* IANA */
               "EUCJP",                  /* glibc, HP-UX, IRIX, OSF/1, Solaris */
               "Extended_UNIX_Code_Packed_Format_for_Japanese", /* IANA */
               "csEUCPkdFmtJapanese",    /* IANA */
-            /*"EUC_JP",                    JDK 1.1 */
+              "EUC_JP",                 /* JDK 1.1 */
             /*"CP51932",                   Windows */
             ),
             euc_jp,
@@ -876,7 +889,7 @@ DEFENCODING(( "EUC-CN",                 /* glibc */
               "GB2312",                 /* IANA */
               "CN-GB",                  /* RFC 1922 */
               "csGB2312",               /* IANA */
-            /*"EUC_CN",                    JDK 1.1 */
+              "EUC_CN",                 /* JDK 1.1 */
             /*"CP51936",                   Windows */
             ),
             euc_cn,
@@ -914,7 +927,7 @@ DEFENCODING(( "GB18030",                /* IANA, glibc */
 
 DEFENCODING(( "ISO-2022-CN",            /* IANA, RFC 1922 */
               "csISO2022CN",
-            /*"ISO2022CN",                 JDK 1.1 */
+              "ISO2022CN",              /* JDK 1.1 */
             ),
             iso2022_cn,
             { iso2022_cn_mbtowc, NULL },  { iso2022_cn_wctomb, iso2022_cn_reset })
@@ -934,7 +947,7 @@ DEFENCODING(( "HZ",                     /* RFC 1843 */
 DEFENCODING(( "EUC-TW",                 /* glibc */
               "EUCTW",                  /* glibc, HP-UX, IRIX, OSF/1 */
               "csEUCTW",
-            /*"EUC_TW",                    JDK 1.1 */
+              "EUC_TW",                 /* JDK 1.1 */
             /*"CP51950",                   Windows */
             ),
             euc_tw,
@@ -988,7 +1001,7 @@ DEFENCODING(( "BIG5-HKSCS",             /* IANA */
 DEFENCODING(( "EUC-KR",                 /* IANA, RFC 1557 */
               "EUCKR",                  /* glibc, HP-UX, IRIX, OSF/1 */
               "csEUCKR",                /* IANA */
-            /*"EUC_KR",                    JDK 1.1 */
+              "EUC_KR",                 /* JDK 1.1 */
             /*"CP51949",                   Windows */
             ),
             euc_kr,
